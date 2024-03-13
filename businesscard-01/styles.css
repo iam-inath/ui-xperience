@@ -1,0 +1,41 @@
+
+.carte {
+    color: white;
+    height: 2in ;
+    width: 3.2in ;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.6em;
+    border: 1px solid navy;
+    padding:15px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:5%;
+    border-radius: 5%;
+background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    }
+
+.address {
+    font-size:11px
+}
+
+.name {
+    font-size: 25px;
+    margin-top: 5%;
+    font-style: bold;
+}
+.contact {
+    font-size: 11px;
+    margin-top:-20px;
+    text-align: right;
+    
+}
+
+.position {
+    font-size: 1.3em;
+    margin-top:-15px;
+    text-align: left;
+}
