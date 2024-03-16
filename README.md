@@ -4,7 +4,7 @@ This repository contains templates of simple UI components. The repository is ba
 
 * Clone the repo with
 ```
-git clone git@github.com:atherosai/ui.git
+git clone git@github.com:iam-inath/ui-xperience.git
 ```
 
 # For HTML/CSS/JS
