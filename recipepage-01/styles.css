@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+}
+
+main {
+  padding: 30px 25px;
+}
+
+h1 {
+  font-family: "Young Serif", sans-serif;
+  color: hsl(24, 5%, 18%);
+  margin-bottom: 20px;
+}
+
+h2, h3, h4 {
+  font-family: "Young Serif", sans-serif;
+  color: hsl(14, 45%, 36%);
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.img-mobile {
+  height: 200px;
+  width: 100%;
+}
+
+.img-desktop {
+  display: none;
+}
+
+span {
+  padding-left: 100px;
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+}
+
+.preparation {
+  background-color: hsl(330, 100%, 98%);
+  padding: 20px 35px;
+  border-radius: 7px;
+  border-top: 20px;
+}
+
+.preparation ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.preparation ul li {
+  margin: 0px 10px 10px;
+  padding: 5px;
+}
+
+.ingredients {
+  padding-left: 16px;
+}
+
+.ingredients li {
+  padding-left: 30px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.instructions {
+  padding-left: 20px;
+}
+
+.instructions li {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.nutrition li {
+  list-style: none;
+  padding-top: 15px;
+}
+
+.row1 {
+  border: 1px solid hsl(30, 18%, 87%);
+}
+
+.row2 {
+  border: 1px solid hsl(30, 18%, 87%);
+}
+
+@media only screen and (min-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    color: hsl(30, 10%, 34%);
+    background-color: hsl(30, 54%, 90%);
+  }
+  main {
+    padding: 40px 45px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 100px auto;
+    max-width: 768px;
+    border-radius: 10px;
+  }
+  h1 {
+    font-family: "Young Serif", sans-serif;
+    color: hsl(24, 5%, 18%);
+    margin-bottom: 20px;
+  }
+  h2, h3, h4 {
+    font-family: "Young Serif", sans-serif;
+    color: hsl(14, 45%, 36%);
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  .img-desktop {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .img-mobile {
+    display: none;
+  }
+  span {
+    padding-left: 300px;
+    color: hsl(14, 45%, 36%);
+    font-weight: 700;
+  }
+  .preparation {
+    background-color: hsl(330, 100%, 98%);
+    padding: 20px 35px;
+    border-radius: 7px;
+    border-top: 20px;
+  }
+  .preparation ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .preparation ul li {
+    margin: 0px 10px 10px;
+    padding: 5px;
+  }
+  .ingredients {
+    padding-left: 16px;
+  }
+  .ingredients li {
+    padding-left: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .instructions {
+    padding-left: 20px;
+  }
+  .instructions li {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .nutrition li {
+    list-style: none;
+    padding-top: 15px;
+  }
+  .row1 {
+    border: 1px solid hsl(30, 18%, 87%);
+  }
+  .row2 {
+    border: 1px solid hsl(30, 18%, 87%);
+  }
+}/*# sourceMappingURL=styles.css.map */

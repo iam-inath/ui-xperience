@@ -1,0 +1,189 @@
+// Initialisation
+// Colors
+$nutmeg: hsl(14, 45%, 36%);
+$DarkRaspberry: hsl(332, 51%, 32%);
+
+$White: hsl(0, 0%, 100%);
+$RoseWhite: hsl(330, 100%, 98%);
+$Eggshell: hsl(30, 54%, 90%);
+$LightGrey: hsl(30, 18%, 87%);
+$WengeBrown: hsl(30, 10%, 34%);
+$DarkCharcoal: hsl(24, 5%, 18%);
+
+// Fonts
+$pFontSize: 16px;
+$YoungSerif: "Young Serif", sans-serif; // Weights: 400
+$Outfit: "Outfit", sans-serif; // Weights: 400, 600, 700
+
+
+// BEGINNING OF CODE
+// Media Queries - Mobile Phones
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: $Outfit;
+    font-size: $pFontSize;
+    color: $WengeBrown;
+}
+main{
+    padding: 30px 25px;
+}
+h1 {
+    font-family: $YoungSerif;
+    color: $DarkCharcoal;
+    margin-bottom: 20px;
+}
+h2,h3, h4 {
+    font-family: $YoungSerif;
+    color: $nutmeg;
+}
+h2{
+    margin-bottom: 20px;
+}
+.img-mobile{
+    height: 200px;
+    width: 100%;
+}
+.img-desktop{
+    display: none;
+}
+
+span {
+    padding-left: 100px;
+    color: $nutmeg;
+    font-weight: 700;
+}
+.preparation {
+    background-color: $RoseWhite;
+    padding:20px 35px;
+    border-radius: 7px;
+    border-top: 20px;
+}
+.preparation ul{
+    padding-left: 20px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.preparation ul li{
+    margin: 0px 10px 10px;
+    padding: 5px;
+}
+.ingredients{
+    padding-left: 16px;
+}
+.ingredients li{
+    padding-left: 30px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.instructions{
+    padding-left: 20px;
+}
+.instructions li{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.nutrition li{
+    list-style: none;
+    padding-top: 15px;
+}
+.row1 {
+    border: 1px solid $LightGrey;
+}
+.row2 {
+    border: 1px solid $LightGrey;
+}
+
+// Media Queries - Larger devices Phones
+@media only screen and  (min-width: 600px){
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        font-family: $Outfit;
+        font-size: $pFontSize;
+        color: $WengeBrown;
+        background-color: $Eggshell;
+    }
+    main{
+        padding: 40px 45px;
+        background-color: $White;
+        margin: 100px auto;
+        max-width: 768px;
+        border-radius: 10px;
+    }
+    h1 {
+        font-family: $YoungSerif;
+        color: $DarkCharcoal;
+        margin-bottom: 20px;
+    }
+    h2,h3, h4 {
+        font-family: $YoungSerif;
+        color: $nutmeg;
+    }
+    h2{
+        margin-bottom: 20px;
+    }
+    .img-desktop{
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .img-mobile{
+        display: none;
+    }
+   
+    span {
+        padding-left: 300px;
+        color: $nutmeg;
+        font-weight: 700;
+    }
+    .preparation {
+        background-color: $RoseWhite;
+        padding:20px 35px;
+        border-radius: 7px;
+        border-top: 20px;
+    }
+    .preparation ul{
+        padding-left: 20px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .preparation ul li{
+        margin: 0px 10px 10px;
+        padding: 5px;
+    }
+    .ingredients{
+        padding-left: 16px;
+    }
+    .ingredients li{
+        padding-left: 30px;
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .instructions{
+        padding-left: 20px;
+    }
+    .instructions li{
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    .nutrition li{
+        list-style: none;
+        padding-top: 15px;
+    }
+    .row1 {
+        border: 1px solid $LightGrey;
+    }
+    .row2 {
+        border: 1px solid $LightGrey;
+    }
+}
+
+
