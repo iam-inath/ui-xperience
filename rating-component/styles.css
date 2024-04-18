@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: "Overpass", sans-serif;
+  max-height: 100vh;
+}
+
+main {
+  background-color: hsl(213, 19%, 18%);
+  margin: 20vh 40px;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 486px;
+  height: 400px;
+}
+
+h2, p {
+  margin: 25px 0px;
+}
+
+p {
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+
+.rating {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.rat {
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(180, 1%, 31%);
+  height: 40px;
+  width: 40px;
+  padding: 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin: 10px 0 15px;
+}
+
+.rat:hover {
+  background-color: hsl(217, 12%, 63%);
+}
+
+.rat:active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+.star-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: hsl(180, 1%, 31%);
+  border: none;
+}
+
+.icon-star {
+  width: 15px;
+}
+
+.submit {
+  background-color: hsl(25, 97%, 53%);
+  border: none;
+  width: 100%;
+  margin-top: 15px;
+  height: 40px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  font-weight: 700;
+  font-family: "Overpass", sans-serif;
+  cursor: pointer;
+}
+
+.submit:active {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.thankyou-card {
+  text-align: center;
+}
+
+.selected-rating {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(180, 1%, 31%);
+  padding: 6px 2px;
+  border-radius: 5px;
+}
+
+.thankyou-icon {
+  margin-top: 20px;
+}
+
+.thankyou-paragraph {
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass", sans-serif;
+    max-height: 100vh;
+  }
+  main {
+    background-color: hsl(213, 19%, 18%);
+    margin: 20vh auto;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 400px;
+    height: 400 px;
+  }
+  h2, p {
+    margin: 25px 0px;
+  }
+  p {
+    font-size: 15px;
+    color: hsl(217, 12%, 63%);
+  }
+  .rating {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .rat {
+    color: hsl(216, 12%, 54%);
+    background-color: hsl(180, 1%, 31%);
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 10px 0 15px;
+  }
+  .rat:hover {
+    background-color: hsl(217, 12%, 63%);
+  }
+  .rat:active {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+  }
+  .rat:focus {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+  }
+  .star-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: hsl(180, 1%, 31%);
+    border: none;
+  }
+  .icon-star {
+    width: 15px;
+  }
+  .submit {
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    height: 40px;
+    color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    font-weight: 700;
+    font-family: "Overpass", sans-serif;
+    cursor: pointer;
+  }
+  .submit:active {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+  }
+  .submit:focus {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+  }
+  .thankyou-card {
+    text-align: center;
+  }
+  #selected-rating {
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(180, 1%, 31%);
+    padding: 6px 2px;
+    border-radius: 5px;
+  }
+  .thankyou-icon {
+    margin-top: 20px;
+  }
+  .thankyou-paragraph {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */

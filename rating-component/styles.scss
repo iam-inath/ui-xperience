@@ -1,0 +1,214 @@
+// Initialisation
+// Colors
+
+$Orange: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$LightGrey: hsl(217, 12%, 63%);
+$MediumGrey: hsl(216, 12%, 54%);
+$DarkGrey: hsl(180, 1%, 31%);
+$DarkBlue: hsl(213, 19%, 18%);
+$VeryDarkBlue: hsl(216, 12%, 8%);
+
+$pfontSize: 15px;
+$Overpass: "Overpass", sans-serif; //Weights: 400, 700
+
+// Mobile: 375px | Desktop: 1440px
+
+// BEGINNING OF CODE
+// Media Queries - Mobile Phones
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: $VeryDarkBlue;
+    color: $White;
+    font-family: $Overpass;
+    max-height: 100vh;
+}
+main {
+    background-color: $DarkBlue;
+    margin: 20vh 40px;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 486px;
+    height: 400px;
+
+}
+h2, p{
+    margin: 25px 0px;
+}
+p{
+    font-size: $pfontSize;
+    color: $LightGrey;
+}
+.rating{
+    display: flex;
+    justify-content: space-evenly;
+}
+.rat{
+color: $MediumGrey;
+background-color: $DarkGrey;
+height: 40px;
+width: 40px;
+padding: 10px;
+border-radius: 50%;
+border: none;
+cursor: pointer;
+font-weight: 600;
+margin: 10px 0 15px;
+}
+.rat:hover{
+    background-color: $LightGrey;
+}
+.rat:active{
+    background-color: $Orange;
+    color: $White;
+}
+.star-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: $DarkGrey;
+    border: none;
+}
+.icon-star{
+    width: 15px;
+}
+.submit{
+    background-color: $Orange;
+    border: none;
+    width: 100%;
+    margin-top: 15px;
+    height: 40px;
+    color: $White;
+    border-radius: 20px;
+    font-weight: 700;
+    font-family: $Overpass;
+    cursor: pointer;
+}
+.submit:active{
+    color: $Orange;
+    background-color: $White;
+}
+.thankyou-card{
+    text-align: center;
+}
+.selected-rating{
+    color: $Orange;
+    background-color: $DarkGrey;
+    padding: 6px  2px;
+    border-radius: 5px;
+}
+.thankyou-icon{
+    margin-top: 20px;
+}
+.thankyou-paragraph{
+    font-size: $pfontSize;
+}
+
+
+// Media Queries - Larger devices Phones
+@media only screen and  (min-width: 600px){
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+    body{
+        background-color: $VeryDarkBlue;
+        color: $White;
+        font-family: $Overpass;
+        max-height: 100vh;
+    }
+    main {
+        background-color: $DarkBlue;
+        margin: 20vh auto;
+        padding: 30px;
+        border-radius: 15px;
+        max-width: 400px;
+        height:400 px;
+    }
+    h2, p{
+        margin: 25px 0px;
+    }
+    p{
+        font-size: $pfontSize;
+        color: $LightGrey;
+    }
+    .rating{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .rat{
+        color: $MediumGrey;
+        background-color: $DarkGrey;
+        height: 40px;
+        width: 40px;
+        padding: 10px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+        margin: 10px 0 15px;
+    }
+    .rat:hover{
+        background-color: $LightGrey;
+    }
+    .rat:active{
+        background-color: $Orange;
+        color: $White;
+    }
+    .rat:focus{
+        background-color: $Orange;
+        color: $White;
+        border:none;
+    }
+    .star-btn{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $DarkGrey;
+        border: none;
+    }
+    .icon-star{
+        width: 15px;
+    }
+    .submit{
+        background-color: $Orange;
+        border: none;
+        width: 100%;
+        margin-top: 15px;
+        height: 40px;
+        color: $White;
+        border-radius: 20px;
+        font-weight: 700;
+        font-family: $Overpass;
+        cursor: pointer;
+    }
+    .submit:active{
+        color: $Orange;
+        background-color: $White;
+    }
+    .submit:focus{
+        color: $Orange;
+        background-color: $White;
+    }
+    .thankyou-card{
+        text-align: center;
+    }
+    #selected-rating{
+        color: $Orange;
+        background-color: $DarkGrey;
+        padding: 6px  2px;
+        border-radius: 5px;
+    }
+    .thankyou-icon{
+        margin-top: 20px;
+    }
+    .thankyou-paragraph{
+        font-size: $pfontSize;
+        margin-bottom: 10px;
+    }
+    }

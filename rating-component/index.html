@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet"  href="styles.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>Interactive Rating Component</title>
+</head>
+<body>
+<main>
+  <div class="rating-card" id="rating-card">
+    <button class="star-btn"><img src="images/icon-star.svg" id="icon-star" class="icon-star"></button>
+  <h2>How did we do?</h2>
+
+  <p>Please let us know how we did with your support request. All feedback is appreciated 
+  to help us improve our offering!</p>
+  <div class="rating">
+  <button  id="button-1" class="rat" value="1">1</button>
+  <button  id="button-2" class="rat" value="2">2</button>
+  <button id="button-3" class="rat" value="3">3</button>
+  <button id="button-4" class="rat" value="4">4</button>
+  <button id="button-5" class="rat" value="5">5</button>
+ </div>
+
+  <button id="submit" class="submit">S U B M I T</button>
+</div>
+
+<div class="thankyou-card" id="thankyou-card" style="display: none;">
+  <img src="images/illustration-thank-you.svg" id="thankyou-icon" class="thankyou-icon">
+  <h2 id="thankyou-title" class="thankyou-title">Thank you!</h2>
+  <p id="selected-rating" class="selected-rating">You selected Add rating here out of 5</p>
+  <p id="thankyou-paragraph" class="thankyou-paragraph">We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!</p>
+</div> 
+
+</main>
+</body>
+</html>
