@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>Coming soon page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<main>
+  <img class="logo" id="logo" src="images/logo.svg">
+  <h1>We are launching <span>soon!</span></h1>
+
+  <p>Subscribe and get notified</p>
+
+  <form>
+  <input type="email" class="email" id="email" placeholder="Your email address" 
+  autocomplete="on" required pattern="[a-z0-9._-]+@[a-z0-9.-_]+\.[a-z]{2,}$">
+  <button type="submit" class="subscribe" id="subscribe">Notify Me</button>
+</form>
+<p class="error" style="display: none;"></p>
+
+<img src="images/illustration-dashboard.png" class="img-dashboard">
+
+
+</main>
+  <footer>
+    <nav>
+    <button><img class="social" id="fb" src="images/twitter.png"></button>
+    <button><img class="social" id="fb" src="images/linkedin.png"></button>
+    <button><img class="social" id="fb" src="images/codepen_icon.png"></button>
+    </nav>
+
+    <p class="copy">Copyright <b>Katshi.dev</b> | All rights reserved.</p>
+
+  </footer>
+</body>
+</html>
