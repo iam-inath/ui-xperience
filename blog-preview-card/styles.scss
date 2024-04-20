@@ -1,0 +1,169 @@
+
+// Mobile: 375px
+// Desktop: 1440px
+
+$Yellow: hsl(47, 88%, 63%);
+
+$White: hsl(0, 0%, 100%);
+$Grey: hsl(0, 0%, 50%);
+$Black: hsl(0, 0%, 7%);
+
+$pFontSize: 16px;
+$Figtree: "Figtree", sans-serif; // 500, 800
+
+
+// Mobile Style
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: $Yellow;
+    font-family: $Figtree;
+}
+main{
+    width: 90%;
+    height: 60%;
+    margin: 45% auto;
+    border-radius: 20px;
+    background-color: $White;
+    border: 1px solid $Black;
+    padding: 25px
+}
+main .illustration{
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+main:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+main h3{
+    background-color: $Yellow;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width: 28%;
+    margin-bottom: 15px;
+}
+main .published{
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-weight: 0.7rem;
+    color: $Black;
+}
+main h2{
+    font-weight: 700;
+    margin-bottom: 20px;
+    &:hover{
+        color: $Yellow;
+        cursor: pointer;
+    }
+}
+main p{
+    color: $Grey;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+main .author{
+    font-weight: bold;
+    color: $Black;
+    align-self: center;
+    margin-top: 15px;
+}
+main div img{
+    width: 35px;
+    margin-right: 10px;
+    align-self: center;
+
+}
+main div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+// LARGER SCREEN MEDIA QUERY
+@media  screen and (min-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: $Yellow;
+        font-family: $Figtree;
+        overflow: auto;
+    }
+    main{
+        min-width: 435px;
+        max-width: 23%;
+        height: 600px;
+        margin: 100px auto;
+        border-radius: 20px;
+        background-color: $White;
+        border: 1px solid $Black;
+        padding: 25px
+            }
+    main:hover{
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+    main .illustration{
+        border-radius: 10px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    main h3{
+        background-color: $Yellow;
+        padding: 5px 10px;
+        border-radius: 10px;
+        width: 28%;
+        margin-bottom: 20px;
+    }
+    main .published{
+        font-weight: bold;
+        margin-bottom: 15px;
+        font-weight: 0.7rem;
+        color: $Black;
+    }
+    main h2{
+        font-weight: 700;
+        margin-bottom: 25px;
+        &:hover{
+            color: $Yellow;
+            cursor: pointer;
+        }
+    }
+    main p{
+        color: $Grey;
+        font-weight: 500;
+        font-size: 1rem;
+        margin-bottom: 25px;
+    }
+    main .author{
+        font-weight: bold;
+        color: $Black;
+        align-self: center;
+        margin-top: 25px;
+    }
+    main div img{
+        width: 35px;
+        margin-right: 10px;
+        align-self: center;
+    
+    }
+    main div{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+}
