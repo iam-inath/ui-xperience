@@ -1,0 +1,290 @@
+$Tomato: hsl(4, 100%, 67%);
+$LightTomato: hsl(4, 100%, 91%);
+
+$DarkSlateGrey: hsl(234, 29%, 20%);
+$CharcoalGrey: hsl(235, 18%, 26%);
+$Grey: hsl(231, 7%, 60%);
+$White: hsl(0, 0%, 100%);
+
+$pFontsize: 16px;
+
+$Roboto: "Roboto", sans-serif; // Weights 400, 700
+
+
+// Design for Telephones and smaller screens
+@media only screen and (max-width: 599px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        font-family: $Roboto;
+        color: $DarkSlateGrey;
+        top: 0;
+        bottom: 0;
+    }
+    body img{
+        width: 100%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 25px;
+    }
+    .illustration-desktop{
+        display: none;
+    }
+    main h1{
+        margin-bottom: 30px;
+        font-size: 2.4rem;
+    }
+    main p{
+        margin-bottom: 20px;
+    }
+    main ul {
+        margin-left: 25px;
+        margin-bottom: 40px;
+    }
+    main ul li{
+        margin-bottom: 15px;
+        list-style-image: url('/assets/images/icon-list.svg');
+        margin-left: 10px;
+    }
+    
+    li img{
+        height: 20px;
+        display: inline;
+        left: 0;
+    }
+    form fieldset{
+        border: none;
+    }
+    fieldset .error-legend{
+        font-weight: bold;
+        color: $Tomato;
+    }
+    fieldset div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    form legend{
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+    form input{
+        width: 100%;
+        margin: 10px 0 20px;
+        padding: 16px 20px;
+        border-radius: 10px;
+        border: 1px solid $Grey;
+        cursor: pointer;
+    }
+    form input:focus{
+        border: 1px solid $CharcoalGrey;
+    }
+    form button{
+        width: 100%;
+        padding: 16px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: $DarkSlateGrey;
+        color: white;
+        font-weight: bold;
+        font-size: 0.9rem;
+        cursor: pointer;
+    }
+    form button:active{
+        background: linear-gradient(45deg, #ffa591, #f05146);
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    }
+    .thankyou{
+        align-items: center;
+        margin: 200px 25px;
+    }
+    .thankyou img{
+        height: 70px;
+        margin-left: -165px;
+        margin: 0px 0px 30px -165px;
+    }
+    .thankyou button{
+        width: 100%;
+        padding: 16px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: $DarkSlateGrey;
+        color: white;
+        font-weight: bold;
+        font-size: 0.9rem;
+        cursor: pointer;
+        margin-top: 200px;
+    }
+    .illustration {
+        display: none;
+    }
+    
+}
+
+// Design for larger screen
+@media only screen and (min-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        font-family: $Roboto;
+        color: $DarkSlateGrey;
+        background-color: $CharcoalGrey;
+        top: 0;
+        bottom: 0;
+    }
+    body img{
+        width: 100%;
+        display: none;
+    }
+    .mainDiv{
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        min-width: 600px;
+        max-width: 1080px;
+        height: 70vh;
+        margin: 15vh auto;
+        border-radius: 25px;
+        padding: 25px;
+    }
+    .stay{
+        padding: 0px 45px 0px 0px;
+        width: 50%;
+    }
+    .illustration-desktop{
+        display: block;
+        background-image: url('/assets/images/illustration-sign-up-desktop.svg');
+        height: 100%;
+        background-repeat: no-repeat;
+        width: 45%;
+        background-size: cover;
+        border-radius: 20px;
+    }
+
+    main h1{
+        margin-bottom: 30px;
+        font-size: 2.4rem;
+    }
+    main p{
+        margin-bottom: 20px;
+    }
+    main ul {
+        margin-left: 25px;
+        margin-bottom: 40px;
+    }
+    main ul li{
+        margin-bottom: 15px;
+        list-style-image: url('/assets/images/icon-list.svg');
+        margin-left: 10px;
+    }
+    
+    li img{
+        height: 20px;
+        display: inline;
+        left: 0;
+    }
+    form fieldset{
+        border: none;
+    }
+    fieldset .error-legend{
+        font-weight: bold;
+        color: $Tomato;
+    }
+    fieldset div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    form legend{
+        font-weight: 700;
+        font-size: 0.8rem;
+    }
+    form input{
+        width: 100%;
+        margin: 10px 0 20px;
+        padding: 16px 20px;
+        border-radius: 10px;
+        border: 1px solid $Grey;
+        cursor: pointer;
+    }
+    form input:focus{
+        border: 1px solid $CharcoalGrey;
+    }
+    form button{
+        width: 100%;
+        padding: 16px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: $DarkSlateGrey;
+        color: white;
+        font-weight: bold;
+        font-size: 0.9rem;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.9;
+        }
+        &:active{
+            background: linear-gradient(45deg, #ffa591, #f05146);
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+   
+        }
+    }
+ 
+    .thankyou{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        min-width: 400px;
+        max-width: 500px;
+        height: 50vh;
+        margin: 25vh auto;
+        border-radius: 15px;
+        padding: 55px;
+    }
+    .thankyou h1{
+        margin-bottom: 30px;
+    }
+    .thankyou img{
+        display: block;
+        height: 70px;
+        margin: 0px 0px 30px -165px;
+    }
+    .thankyou button{
+        width: 100%;
+        padding: 16px 20px;
+        border-radius: 10px;
+        border: none;
+        background-color: $DarkSlateGrey;
+        color: white;
+        font-weight: bold;
+        font-size: 0.9rem;
+        cursor: pointer;
+        margin-top: 100px;
+    }
+    .thankyou button:hover{
+        opacity: 0.9;
+    }
+    .thankyou button:active{
+        opacity: 0.7;
+        background: linear-gradient(45deg, #ffa591, #f05146);
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;  
+    }
+}
