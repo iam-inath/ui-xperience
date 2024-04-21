@@ -1,0 +1,163 @@
+:root{
+--MobileSize: 375;
+--DesktopSize: 1440;
+
+--White: hsl(0, 0%, 100%);
+--Lightpink: hsl(275, 100%, 97%);
+--Grayishpurple: hsl(292, 16%, 49%);
+--Purple: hsl(293, 52%, 48%);
+--Darkpurple: hsl(292, 42%, 14%);
+
+--pFontSize: 16px;
+--WorkSans: "Work Sans", sans-serif; /*Weights: 400, 600, 700*/
+--BackgroundMobile: url('/assets/images/background-pattern-mobile.svg');
+--BackgroundDesktop: url('/assets/images/background-pattern-desktop.svg');
+}
+
+/* PHONES */
+@media screen and (max-width: 599px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--Lightpink);
+        font-family: var(--WorkSans);
+        font-size: var(--pFontSize);
+    }
+    main{
+        background-color: var(--White);
+        min-width: 350px;
+        max-width: 90%;
+        margin: auto;
+        padding: 25px;
+        border-radius: 8px;
+        position: absolute;
+        top: 20%;
+        left: 5%;
+    }
+    header{
+        background-image: var(--BackgroundMobile);
+        height: 30vh;
+    }
+    .faqs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 35%;
+        margin-bottom: 25px;
+    }
+    .icon-star{
+        width: 25px;
+    }
+    h3{
+        font-size: 1.1rem;
+        color:var(--Darkpurple)
+    }
+    p{
+        color: var(--Grayishpurple);
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    section div{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0px;
+    }
+    section div h3:hover{
+        color: var(--Purple);
+        cursor:pointer;
+    }
+    section div h3{
+        width: 80%;
+    }
+    section div img:hover{
+        cursor: pointer;
+    }
+    hr{
+        background-color: var(--Lightpink);
+        border: none;
+        height: 0.9px;
+        margin-top: 20px;
+    }
+}
+
+
+/* COMPUTER DESKTOP AND LARGER SCREENS */
+
+@media screen and (min-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing:border-box;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--Lightpink);
+        font-family: var(--WorkSans);
+        font-size: var(--pFontSize);
+    }
+    main{
+        background-color: var(--White);
+        min-width: 500px;
+        max-width: 35%;
+        margin: auto;
+        padding: 35px;
+        border-radius: 8px;
+        position: absolute;
+        top: 20%;
+        left: 0;
+        right: 0;
+    }
+    header{
+        background-image: var(--BackgroundDesktop);
+        height: 30vh;
+    }
+    .faqs{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 25%;
+        margin-bottom: 25px;
+    }
+    .icon-star{
+        width: 25px;
+    }
+    h3{
+        font-size: 1.2rem;
+        color:var(--Darkpurple)
+    }
+    p{
+        color: var(--Grayishpurple);
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    section div{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px 0px;
+    }
+    section div h3:hover{
+        color: var(--Purple);
+        cursor:pointer;
+    }
+    section div h3{
+        width: 80%;
+    }
+    section div img:hover{
+        cursor: pointer;
+    }
+    hr{
+        background-color: var(--Lightpink);
+        border: none;
+        height: 0.9px;
+        margin-top: 20px;
+    }
+}
+
+
+/* COMPUTER AND LARGER SCREENS */
