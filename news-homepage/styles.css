@@ -28,6 +28,7 @@
       font-size: var(--pFontSize);
       color: var(--Verydarkblue);
       height: 100vh;
+      background-color: var(--Off-white);
    }
    header {
       display: flex;
@@ -228,6 +229,7 @@
       font-family: var(--Inter);
       font-size: var(--pFontSize);
       color: var(--Verydarkblue);
+      background-color: var(--Off-white);
    }
    header {
       display: flex;
