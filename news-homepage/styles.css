@@ -259,7 +259,7 @@
       cursor: pointer;
    }
    main {
-      width: 70%;
+      width: 80%;
       margin: 20px auto;
       display: grid;
       grid-template-columns: 3fr 1fr;
@@ -317,7 +317,7 @@
       font-weight: bold;
       font-size: 0.9rem;
       color: white;
-      width: auto%;
+      width: 40%;
       cursor: pointer;
    }
    .hero__title {
