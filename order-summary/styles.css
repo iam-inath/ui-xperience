@@ -1,0 +1,215 @@
+:root {
+   --Mobile: 375px;
+   --Desktop: 1440px;
+
+   --Paleblue: hsl(225, 100%, 94%);
+   --brightblue: hsl(245, 75%, 52%);
+
+   --Verypaleblue: hsl(225, 100%, 98%);
+   --Desaturatedblue: hsl(224, 23%, 55%);
+   --Darkblue: hsl(223, 47%, 23%);
+   --RedHatDisplay: "Red Hat Display", sans-serif; /* Weights: 500, 700, 900 */
+}
+
+@media screen and (min-width: 600px) {
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   body {
+      height: 100vh;
+      width: 100vw;
+      font-family: var(--RedHatDisplay);
+      background-color: var(--Paleblue);
+      display: grid;
+      place-items: center;
+      color: var(--Darkblue);
+   }
+   main {
+      background-color: white;
+      width: 370px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1rem;
+      padding-bottom: 40px;
+   }
+   main .heroo {
+      width: 100%;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+   }
+   main h2 {
+      margin: 40px 0px 20px 0px;
+   }
+   main p {
+      text-align: center;
+      color: var(--Desaturatedblue);
+   }
+   main .cta {
+      margin: 0px 30px 20px;
+   }
+   .annualplan {
+      display: flex;
+      width: 85%;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: var(--Verypaleblue);
+      padding: 15px 15px;
+      border-radius: 7px;
+      align-items: center;
+      margin-bottom: 20px;
+   }
+   .annualplan a {
+      margin-left: 35px;
+      color: var(--brightblue);
+      font-weight: bold;
+      text-decoration: underline;
+      &:hover {
+         cursor: pointer;
+         text-decoration: none;
+         opacity: 0.8;
+      }
+   }
+   .title {
+      color: var(--Darkblue);
+      font-weight: bold;
+   }
+   .price {
+      font-size: 0.9rem;
+   }
+   .music-icon {
+      background-image: url("images/icon-music.svg");
+      height: 50px;
+      width: 50px;
+   }
+   button {
+      color: white;
+      font-weight: bold;
+      background-color: var(--brightblue);
+      width: 85%;
+      border-radius: 10px;
+      height: 50px;
+      padding: 15px auto;
+      border: none;
+      font-size: 1rem;
+      font-family: var(--RedHatDisplay);
+      margin-bottom: 20px;
+      &:hover {
+         cursor: pointer;
+         opacity: 0.7;
+      }
+   }
+   .cancel {
+      color: var(--Desaturatedblue);
+      font-weight: 700;
+      text-decoration: none;
+      &:hover {
+         cursor: pointer;
+         color: var(--Darkblue);
+      }
+   }
+}
+@media screen and (max-width: 599px) {
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   body {
+      height: 100vh;
+      width: 100vw;
+      font-family: var(--RedHatDisplay);
+      background-color: var(--Paleblue);
+      display: grid;
+      place-items: center;
+      color: var(--Darkblue);
+   }
+   main {
+      background-color: white;
+      width: 370px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1rem;
+      padding-bottom: 40px;
+   }
+   main .heroo {
+      width: 100%;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+   }
+   main h2 {
+      margin: 40px 0px 20px 0px;
+   }
+   main p {
+      text-align: center;
+      color: var(--Desaturatedblue);
+   }
+   main .cta {
+      margin: 0px 30px 20px;
+   }
+   .annualplan {
+      display: flex;
+      width: 85%;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: var(--Verypaleblue);
+      padding: 15px 15px;
+      border-radius: 7px;
+      align-items: center;
+      margin-bottom: 20px;
+   }
+   .annualplan a {
+      margin-left: 35px;
+      color: var(--brightblue);
+      font-weight: bold;
+      text-decoration: underline;
+      &:hover {
+         cursor: pointer;
+         text-decoration: none;
+         opacity: 0.8;
+      }
+   }
+   .title {
+      color: var(--Darkblue);
+      font-weight: bold;
+   }
+   .price {
+      font-size: 0.9rem;
+   }
+   .music-icon {
+      background-image: url("images/icon-music.svg");
+      height: 50px;
+      width: 50px;
+   }
+   button {
+      color: white;
+      font-weight: bold;
+      background-color: var(--brightblue);
+      width: 85%;
+      border-radius: 10px;
+      height: 50px;
+      padding: 15px auto;
+      border: none;
+      font-size: 1rem;
+      font-family: var(--RedHatDisplay);
+      margin-bottom: 20px;
+      &:hover {
+         cursor: pointer;
+         opacity: 0.7;
+      }
+   }
+   .cancel {
+      color: var(--Desaturatedblue);
+      font-weight: 700;
+      text-decoration: none;
+      &:hover {
+         cursor: pointer;
+         color: var(--Darkblue);
+      }
+   }
+}
