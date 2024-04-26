@@ -1,0 +1,182 @@
+:root {
+   --Mobile: 375px;
+   --Desktop: 1440px;
+
+   --Verydarkblue: hsl(233, 47%, 7%); /* (main background) */
+   --Darkdesaturatedblue: hsl(244, 38%, 16%); /* (card background) */
+   --Softviolet: hsl(277, 64%, 61%); /*  (accent)d) */
+   --ovSoftviolet: rgba(157, 32, 173, 0.4); /*  (accent)d) */
+
+   --White: hsl(0, 0%, 100%); /* (main heading, stats) */
+   --pSlightlytransparentwhite: hsla(0, 0%, 100%, 0.75); /*  (main paragraph) */
+   --hSlightlytransparentwhite: hsla(0, 0%, 100%, 0.6); /*  (stat headings)d) */
+
+   --Inter: "Inter", sans-serif;
+
+   --LegendDeca: "Legend Deca", sans-serif;
+}
+
+@media screen and (max-width: 599px) {
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   body {
+      height: 100vh;
+      width: 100vw;
+      display: grid;
+      place-items: center;
+      background-color: var(--Verydarkblue);
+      color: var(--White);
+      font-family: var(--Inter);
+   }
+   .statpreview {
+      width: 340px;
+      text-align: center;
+      background-color: var(--Darkdesaturatedblue);
+      border-radius: 1rem;
+   }
+   span {
+      color: var(--Softviolet);
+   }
+   .stat-img {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      background-image: url("/images/image-header-mobile.jpg");
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+   }
+   .stat-img::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: var(--ovSoftviolet);
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+   }
+   .stat-txt {
+      padding: 30px;
+      color: var(--hSlightlytransparentwhite);
+      font-weight: 500;
+   }
+   .statpreview h2 {
+      margin: 5px 5px 20px;
+      color: var(--White);
+   }
+   .statpreview p {
+      font-family: var(--Inter);
+      font-weight: 400;
+      margin: 5px 5px 20px;
+      font-size: 0.9rem;
+      color: var(--pSlightlytransparentwhite);
+   }
+   .statpreview h3 {
+      color: var(--White);
+   }
+   .p {
+      font-family: var(--Inter);
+      font-weight: 300;
+      font-size: 0.8rem;
+      color: var(--hSlightlytransparentwhite);
+   }
+}
+
+/* PC AND WIDER SCREENS */
+
+@media screen and (min-width: 600px) {
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+   }
+   body {
+      height: 100vh;
+      width: 100vw;
+      display: grid;
+      place-items: center;
+      background-color: var(--Verydarkblue);
+      color: var(--White);
+      font-family: var(--Inter);
+      font-size: 1rem;
+   }
+   .statpreview {
+      width: 70%;
+      height: 60%;
+      display: flex;
+      flex-direction: row-reverse;
+      text-align: center;
+      background-color: var(--Darkdesaturatedblue);
+      border-radius: 1rem;
+      border-radius: 1rem;
+   }
+   span {
+      color: var(--Softviolet);
+   }
+   .insight {
+      display: flex;
+      width: 100%;
+   }
+   .stat-img {
+      width: 50%;
+      height: 100%;
+      position: relative;
+      background-image: url("/images/image-header-mobile.jpg");
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      background-repeat: no-repeat;
+      background-position: cover;
+   }
+   .stat-img::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: var(--ovSoftviolet);
+      border-top-left-radius: inherit;
+      border-top-right-radius: inherit;
+   }
+   .stat-txt {
+      width: 50%;
+      padding: 30px;
+      color: var(--hSlightlytransparentwhite);
+      display: flex;
+      padding: 100px 150px 100px 50px;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      font-weight: 500;
+   }
+   .statpreview h2 {
+      margin: 5px 5px 30px;
+      color: var(--White);
+      text-align: left;
+   }
+   .statpreview p {
+      text-align: left;
+      font-family: var(--Inter);
+      font-weight: 400;
+      margin: 5px 5px 40px;
+      font-size: 0.9rem;
+      color: var(--pSlightlytransparentwhite);
+   }
+   .statpreview h3 {
+      color: var(--White);
+   }
+   .p {
+      font-family: var(--Inter);
+      font-weight: 300;
+      font-size: 0.8rem;
+      color: var(--hSlightlytransparentwhite);
+   }
+   .insight {
+      display: flex;
+      justify-content: space-between;
+   }
+}
